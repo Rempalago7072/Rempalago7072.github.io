@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Arkanoid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Arkanoid</h1>
+    <button id="startGame">Iniciar Juego</button>
+    <button id="settingsButton">Ajustes</button>
+  </div>
+
+  <div id="gameContainer" style="display:none;">
+    <canvas id="arkanoidCanvas" width="400" height="500"></canvas>
+    <div id="gameOverScreen" style="display:none;">
+      <h1>Game Over</h1>
+      <button id="restartButton">Reiniciar Juego</button>
+    </div>
+  </div>
+
+  <div id="settingsMenu" style="display:none;">
+    <h2>Ajustes</h2>
+    <label for="paddleColorPicker">Color de la Plataforma:</label>
+    <input type="color" id="paddleColorPicker">
+    <br><br>
+    <label for="bgColorPicker">Color del Fondo:</label>
+    <input type="color" id="bgColorPicker">
+    <br><br>
+    <button id="backButton">Atrás</button>
+  </div>
+
+  <!-- Botones de flechas para mover la plataforma -->
+  <div id="controls">
+    <button id="leftArrow" class="arrow left">&#8592;</button>
+    <button id="rightArrow" class="arrow right">&#8594;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
